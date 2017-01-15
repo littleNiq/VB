@@ -1,0 +1,10 @@
+If curpge < pgecount - 1 Then
+       curpge = curpge + 1
+       For i = 1 To 10
+         teaxklist((curpge - 1) * 10 + i).cj = Text2(i - 1).Text
+       Next
+     ElseIf curpge = pgecount - 1 Then
+       curpge = curpge + 1
+       For i = 1 To pgemod
+         teaxklist((curpge - 1) * 10 + i).cj = Text2(i - 1).Text
+       Next
